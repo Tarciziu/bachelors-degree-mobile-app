@@ -14,6 +14,16 @@
 		D9D0B53A28259AF400FA8144 /* BachelorsDegreeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B53928259AF400FA8144 /* BachelorsDegreeAppTests.swift */; };
 		D9D0B54428259AF500FA8144 /* BachelorsDegreeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B54328259AF500FA8144 /* BachelorsDegreeAppUITests.swift */; };
 		D9D0B54628259AF500FA8144 /* BachelorsDegreeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B54528259AF500FA8144 /* BachelorsDegreeAppUITestsLaunchTests.swift */; };
+		D9D0B56428259E1000FA8144 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B55B28259E1000FA8144 /* Inter-Medium.ttf */; };
+		D9D0B56528259E1000FA8144 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B55C28259E1000FA8144 /* Inter-Light.ttf */; };
+		D9D0B56628259E1000FA8144 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B55D28259E1000FA8144 /* Inter-Thin.ttf */; };
+		D9D0B56728259E1000FA8144 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B55E28259E1000FA8144 /* Inter-Bold.ttf */; };
+		D9D0B56828259E1000FA8144 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B55F28259E1000FA8144 /* Inter-Regular.ttf */; };
+		D9D0B56928259E1000FA8144 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B56028259E1000FA8144 /* Inter-ExtraBold.ttf */; };
+		D9D0B56A28259E1000FA8144 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B56128259E1000FA8144 /* Inter-ExtraLight.ttf */; };
+		D9D0B56B28259E1000FA8144 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B56228259E1000FA8144 /* Inter-Black.ttf */; };
+		D9D0B56C28259E1000FA8144 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B56328259E1000FA8144 /* Inter-SemiBold.ttf */; };
+		D9D0B5702825A03A00FA8144 /* FontsCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B56F2825A03900FA8144 /* FontsCatalog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,17 @@
 		D9D0B53F28259AF400FA8144 /* BachelorsDegreeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BachelorsDegreeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D0B54328259AF500FA8144 /* BachelorsDegreeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachelorsDegreeAppUITests.swift; sourceTree = "<group>"; };
 		D9D0B54528259AF500FA8144 /* BachelorsDegreeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachelorsDegreeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9D0B55B28259E1000FA8144 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		D9D0B55C28259E1000FA8144 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		D9D0B55D28259E1000FA8144 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		D9D0B55E28259E1000FA8144 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		D9D0B55F28259E1000FA8144 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		D9D0B56028259E1000FA8144 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D9D0B56128259E1000FA8144 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D9D0B56228259E1000FA8144 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		D9D0B56328259E1000FA8144 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		D9D0B56D28259F0300FA8144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D9D0B56F2825A03900FA8144 /* FontsCatalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsCatalog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +100,9 @@
 				D9D0B54228259AF400FA8144 /* BachelorsDegreeAppUITests */,
 				D9D0B52628259AF100FA8144 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		D9D0B52628259AF100FA8144 /* Products */ = {
 			isa = PBXGroup;
@@ -94,11 +117,13 @@
 		D9D0B52728259AF100FA8144 /* BachelorsDegreeApp */ = {
 			isa = PBXGroup;
 			children = (
+				D9D0B56D28259F0300FA8144 /* Info.plist */,
 				D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */,
 				D9D0B52A28259AF100FA8144 /* ContentView.swift */,
 				D9D0B55728259C7100FA8144 /* Features */,
-				D9D0B52C28259AF400FA8144 /* Assets.xcassets */,
 				D9D0B52E28259AF400FA8144 /* Preview Content */,
+				D9D0B55928259DE300FA8144 /* Resources */,
+				D9D0B56E2825A02900FA8144 /* Utils */,
 			);
 			path = BachelorsDegreeApp;
 			sourceTree = "<group>";
@@ -173,6 +198,39 @@
 				D9D0B55328259C1D00FA8144 /* Domain */,
 			);
 			path = Fields;
+			sourceTree = "<group>";
+		};
+		D9D0B55928259DE300FA8144 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0B55A28259E1000FA8144 /* Fonts */,
+				D9D0B52C28259AF400FA8144 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D9D0B55A28259E1000FA8144 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0B55B28259E1000FA8144 /* Inter-Medium.ttf */,
+				D9D0B55C28259E1000FA8144 /* Inter-Light.ttf */,
+				D9D0B55D28259E1000FA8144 /* Inter-Thin.ttf */,
+				D9D0B55E28259E1000FA8144 /* Inter-Bold.ttf */,
+				D9D0B55F28259E1000FA8144 /* Inter-Regular.ttf */,
+				D9D0B56028259E1000FA8144 /* Inter-ExtraBold.ttf */,
+				D9D0B56128259E1000FA8144 /* Inter-ExtraLight.ttf */,
+				D9D0B56228259E1000FA8144 /* Inter-Black.ttf */,
+				D9D0B56328259E1000FA8144 /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D9D0B56E2825A02900FA8144 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0B56F2825A03900FA8144 /* FontsCatalog.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +337,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D0B56728259E1000FA8144 /* Inter-Bold.ttf in Resources */,
 				D9D0B53028259AF400FA8144 /* Preview Assets.xcassets in Resources */,
 				D9D0B52D28259AF400FA8144 /* Assets.xcassets in Resources */,
+				D9D0B56C28259E1000FA8144 /* Inter-SemiBold.ttf in Resources */,
+				D9D0B56928259E1000FA8144 /* Inter-ExtraBold.ttf in Resources */,
+				D9D0B56528259E1000FA8144 /* Inter-Light.ttf in Resources */,
+				D9D0B56628259E1000FA8144 /* Inter-Thin.ttf in Resources */,
+				D9D0B56428259E1000FA8144 /* Inter-Medium.ttf in Resources */,
+				D9D0B56B28259E1000FA8144 /* Inter-Black.ttf in Resources */,
+				D9D0B56A28259E1000FA8144 /* Inter-ExtraLight.ttf in Resources */,
+				D9D0B56828259E1000FA8144 /* Inter-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9D0B52B28259AF100FA8144 /* ContentView.swift in Sources */,
+				D9D0B5702825A03A00FA8144 /* FontsCatalog.swift in Sources */,
 				D9D0B52928259AF100FA8144 /* BachelorsDegreeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +538,7 @@
 				DEVELOPMENT_TEAM = ZK6RDFQAA2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BachelorsDegreeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -499,6 +568,7 @@
 				DEVELOPMENT_TEAM = ZK6RDFQAA2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BachelorsDegreeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
