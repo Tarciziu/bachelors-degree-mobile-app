@@ -96,6 +96,7 @@
 			children = (
 				D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */,
 				D9D0B52A28259AF100FA8144 /* ContentView.swift */,
+				D9D0B55728259C7100FA8144 /* Features */,
 				D9D0B52C28259AF400FA8144 /* Assets.xcassets */,
 				D9D0B52E28259AF400FA8144 /* Preview Content */,
 			);
@@ -125,6 +126,53 @@
 				D9D0B54528259AF500FA8144 /* BachelorsDegreeAppUITestsLaunchTests.swift */,
 			);
 			path = BachelorsDegreeAppUITests;
+			sourceTree = "<group>";
+		};
+		D9D0B55328259C1D00FA8144 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D9D0B55428259C3200FA8144 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9D0B55528259C3A00FA8144 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D9D0B55628259C4600FA8144 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D9D0B55728259C7100FA8144 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0B55828259C7F00FA8144 /* Fields */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D9D0B55828259C7F00FA8144 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0B55628259C4600FA8144 /* Data */,
+				D9D0B55528259C3A00FA8144 /* ViewModel */,
+				D9D0B55428259C3200FA8144 /* Views */,
+				D9D0B55328259C1D00FA8144 /* Domain */,
+			);
+			path = Fields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
