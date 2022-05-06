@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D9D0B52928259AF100FA8144 /* BachelorsDegreeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */; };
-		D9D0B52B28259AF100FA8144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B52A28259AF100FA8144 /* ContentView.swift */; };
+		D9D0B52B28259AF100FA8144 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B52A28259AF100FA8144 /* LoginView.swift */; };
 		D9D0B52D28259AF400FA8144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B52C28259AF400FA8144 /* Assets.xcassets */; };
 		D9D0B53028259AF400FA8144 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B52F28259AF400FA8144 /* Preview Assets.xcassets */; };
 		D9D0B53A28259AF400FA8144 /* BachelorsDegreeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B53928259AF400FA8144 /* BachelorsDegreeAppTests.swift */; };
@@ -25,6 +25,8 @@
 		D9D0B56C28259E1000FA8144 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B56328259E1000FA8144 /* Inter-SemiBold.ttf */; };
 		D9D0B5702825A03A00FA8144 /* FontsCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B56F2825A03900FA8144 /* FontsCatalog.swift */; };
 		D9D0B5722825A14F00FA8144 /* ColorsCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B5712825A14F00FA8144 /* ColorsCatalog.swift */; };
+		D9D0B57428267D9C00FA8144 /* MainLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B57328267D9C00FA8144 /* MainLandingView.swift */; };
+		D9D0B57628267E6000FA8144 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B57528267E6000FA8144 /* Authentication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,7 @@
 /* Begin PBXFileReference section */
 		D9D0B52528259AF100FA8144 /* BachelorsDegreeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BachelorsDegreeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachelorsDegreeAppApp.swift; sourceTree = "<group>"; };
-		D9D0B52A28259AF100FA8144 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9D0B52A28259AF100FA8144 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D9D0B52C28259AF400FA8144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D0B52F28259AF400FA8144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9D0B53528259AF400FA8144 /* BachelorsDegreeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BachelorsDegreeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,8 @@
 		D9D0B56D28259F0300FA8144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D9D0B56F2825A03900FA8144 /* FontsCatalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsCatalog.swift; sourceTree = "<group>"; };
 		D9D0B5712825A14F00FA8144 /* ColorsCatalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsCatalog.swift; sourceTree = "<group>"; };
+		D9D0B57328267D9C00FA8144 /* MainLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLandingView.swift; sourceTree = "<group>"; };
+		D9D0B57528267E6000FA8144 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +125,6 @@
 			children = (
 				D9D0B56D28259F0300FA8144 /* Info.plist */,
 				D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */,
-				D9D0B52A28259AF100FA8144 /* ContentView.swift */,
 				D9D0B55728259C7100FA8144 /* Features */,
 				D9D0B52E28259AF400FA8144 /* Preview Content */,
 				D9D0B56E2825A02900FA8144 /* Utils */,
@@ -186,6 +189,9 @@
 		D9D0B55728259C7100FA8144 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				D9D0B57328267D9C00FA8144 /* MainLandingView.swift */,
+				D9D0B57528267E6000FA8144 /* Authentication.swift */,
+				D9D0B52A28259AF100FA8144 /* LoginView.swift */,
 				D9D0B55828259C7F00FA8144 /* Fields */,
 			);
 			path = Features;
@@ -375,10 +381,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9D0B52B28259AF100FA8144 /* ContentView.swift in Sources */,
+				D9D0B57428267D9C00FA8144 /* MainLandingView.swift in Sources */,
+				D9D0B52B28259AF100FA8144 /* LoginView.swift in Sources */,
 				D9D0B5702825A03A00FA8144 /* FontsCatalog.swift in Sources */,
 				D9D0B52928259AF100FA8144 /* BachelorsDegreeAppApp.swift in Sources */,
 				D9D0B5722825A14F00FA8144 /* ColorsCatalog.swift in Sources */,
+				D9D0B57628267E6000FA8144 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
