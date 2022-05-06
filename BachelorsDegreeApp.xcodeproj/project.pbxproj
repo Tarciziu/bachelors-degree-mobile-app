@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9D0B52928259AF100FA8144 /* BachelorsDegreeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */; };
+		D9D0B52B28259AF100FA8144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B52A28259AF100FA8144 /* ContentView.swift */; };
+		D9D0B52D28259AF400FA8144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B52C28259AF400FA8144 /* Assets.xcassets */; };
+		D9D0B53028259AF400FA8144 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B52F28259AF400FA8144 /* Preview Assets.xcassets */; };
+		D9D0B53A28259AF400FA8144 /* BachelorsDegreeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B53928259AF400FA8144 /* BachelorsDegreeAppTests.swift */; };
+		D9D0B54428259AF500FA8144 /* BachelorsDegreeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B54328259AF500FA8144 /* BachelorsDegreeAppUITests.swift */; };
+		D9D0B54628259AF500FA8144 /* BachelorsDegreeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B54528259AF500FA8144 /* BachelorsDegreeAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9D0B53628259AF400FA8144 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D0B51D28259AF100FA8144 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9D0B52428259AF100FA8144;
+			remoteInfo = BachelorsDegreeApp;
+		};
+		D9D0B54028259AF400FA8144 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D0B51D28259AF100FA8144 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9D0B52428259AF100FA8144;
+			remoteInfo = BachelorsDegreeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9D0B52528259AF100FA8144 /* BachelorsDegreeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BachelorsDegreeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachelorsDegreeAppApp.swift; sourceTree = "<group>"; };
+		D9D0B52A28259AF100FA8144 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9D0B52C28259AF400FA8144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9D0B52F28259AF400FA8144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9D0B53528259AF400FA8144 /* BachelorsDegreeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BachelorsDegreeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D0B53928259AF400FA8144 /* BachelorsDegreeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachelorsDegreeAppTests.swift; sourceTree = "<group>"; };
+		D9D0B53F28259AF400FA8144 /* BachelorsDegreeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BachelorsDegreeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D0B54328259AF500FA8144 /* BachelorsDegreeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachelorsDegreeAppUITests.swift; sourceTree = "<group>"; };
+		D9D0B54528259AF500FA8144 /* BachelorsDegreeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachelorsDegreeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9D0B52228259AF100FA8144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D0B53228259AF400FA8144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D0B53C28259AF400FA8144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9D0B51C28259AF100FA8144 = {
+			isa = PBXGroup;
+			children = (
+				D9D0B52728259AF100FA8144 /* BachelorsDegreeApp */,
+				D9D0B53828259AF400FA8144 /* BachelorsDegreeAppTests */,
+				D9D0B54228259AF400FA8144 /* BachelorsDegreeAppUITests */,
+				D9D0B52628259AF100FA8144 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9D0B52628259AF100FA8144 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0B52528259AF100FA8144 /* BachelorsDegreeApp.app */,
+				D9D0B53528259AF400FA8144 /* BachelorsDegreeAppTests.xctest */,
+				D9D0B53F28259AF400FA8144 /* BachelorsDegreeAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9D0B52728259AF100FA8144 /* BachelorsDegreeApp */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */,
+				D9D0B52A28259AF100FA8144 /* ContentView.swift */,
+				D9D0B52C28259AF400FA8144 /* Assets.xcassets */,
+				D9D0B52E28259AF400FA8144 /* Preview Content */,
+			);
+			path = BachelorsDegreeApp;
+			sourceTree = "<group>";
+		};
+		D9D0B52E28259AF400FA8144 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0B52F28259AF400FA8144 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9D0B53828259AF400FA8144 /* BachelorsDegreeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0B53928259AF400FA8144 /* BachelorsDegreeAppTests.swift */,
+			);
+			path = BachelorsDegreeAppTests;
+			sourceTree = "<group>";
+		};
+		D9D0B54228259AF400FA8144 /* BachelorsDegreeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0B54328259AF500FA8144 /* BachelorsDegreeAppUITests.swift */,
+				D9D0B54528259AF500FA8144 /* BachelorsDegreeAppUITestsLaunchTests.swift */,
+			);
+			path = BachelorsDegreeAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9D0B52428259AF100FA8144 /* BachelorsDegreeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D0B54928259AF500FA8144 /* Build configuration list for PBXNativeTarget "BachelorsDegreeApp" */;
+			buildPhases = (
+				D9D0B52128259AF100FA8144 /* Sources */,
+				D9D0B52228259AF100FA8144 /* Frameworks */,
+				D9D0B52328259AF100FA8144 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BachelorsDegreeApp;
+			productName = BachelorsDegreeApp;
+			productReference = D9D0B52528259AF100FA8144 /* BachelorsDegreeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9D0B53428259AF400FA8144 /* BachelorsDegreeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D0B54C28259AF500FA8144 /* Build configuration list for PBXNativeTarget "BachelorsDegreeAppTests" */;
+			buildPhases = (
+				D9D0B53128259AF400FA8144 /* Sources */,
+				D9D0B53228259AF400FA8144 /* Frameworks */,
+				D9D0B53328259AF400FA8144 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9D0B53728259AF400FA8144 /* PBXTargetDependency */,
+			);
+			name = BachelorsDegreeAppTests;
+			productName = BachelorsDegreeAppTests;
+			productReference = D9D0B53528259AF400FA8144 /* BachelorsDegreeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9D0B53E28259AF400FA8144 /* BachelorsDegreeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D0B54F28259AF500FA8144 /* Build configuration list for PBXNativeTarget "BachelorsDegreeAppUITests" */;
+			buildPhases = (
+				D9D0B53B28259AF400FA8144 /* Sources */,
+				D9D0B53C28259AF400FA8144 /* Frameworks */,
+				D9D0B53D28259AF400FA8144 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9D0B54128259AF400FA8144 /* PBXTargetDependency */,
+			);
+			name = BachelorsDegreeAppUITests;
+			productName = BachelorsDegreeAppUITests;
+			productReference = D9D0B53F28259AF400FA8144 /* BachelorsDegreeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9D0B51D28259AF100FA8144 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D9D0B52428259AF100FA8144 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D9D0B53428259AF400FA8144 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D9D0B52428259AF100FA8144;
+					};
+					D9D0B53E28259AF400FA8144 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D9D0B52428259AF100FA8144;
+					};
+				};
+			};
+			buildConfigurationList = D9D0B52028259AF100FA8144 /* Build configuration list for PBXProject "BachelorsDegreeApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9D0B51C28259AF100FA8144;
+			productRefGroup = D9D0B52628259AF100FA8144 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9D0B52428259AF100FA8144 /* BachelorsDegreeApp */,
+				D9D0B53428259AF400FA8144 /* BachelorsDegreeAppTests */,
+				D9D0B53E28259AF400FA8144 /* BachelorsDegreeAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9D0B52328259AF100FA8144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D0B53028259AF400FA8144 /* Preview Assets.xcassets in Resources */,
+				D9D0B52D28259AF400FA8144 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D0B53328259AF400FA8144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D0B53D28259AF400FA8144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9D0B52128259AF100FA8144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D0B52B28259AF100FA8144 /* ContentView.swift in Sources */,
+				D9D0B52928259AF100FA8144 /* BachelorsDegreeAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D0B53128259AF400FA8144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D0B53A28259AF400FA8144 /* BachelorsDegreeAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D0B53B28259AF400FA8144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D0B54628259AF500FA8144 /* BachelorsDegreeAppUITestsLaunchTests.swift in Sources */,
+				D9D0B54428259AF500FA8144 /* BachelorsDegreeAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9D0B53728259AF400FA8144 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9D0B52428259AF100FA8144 /* BachelorsDegreeApp */;
+			targetProxy = D9D0B53628259AF400FA8144 /* PBXContainerItemProxy */;
+		};
+		D9D0B54128259AF400FA8144 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9D0B52428259AF100FA8144 /* BachelorsDegreeApp */;
+			targetProxy = D9D0B54028259AF400FA8144 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D9D0B54728259AF500FA8144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9D0B54828259AF500FA8144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9D0B54A28259AF500FA8144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BachelorsDegreeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = ZK6RDFQAA2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarciziu.BachelorsDegreeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9D0B54B28259AF500FA8144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BachelorsDegreeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = ZK6RDFQAA2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarciziu.BachelorsDegreeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9D0B54D28259AF500FA8144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK6RDFQAA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarciziu.BachelorsDegreeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BachelorsDegreeApp.app/BachelorsDegreeApp";
+			};
+			name = Debug;
+		};
+		D9D0B54E28259AF500FA8144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK6RDFQAA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarciziu.BachelorsDegreeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BachelorsDegreeApp.app/BachelorsDegreeApp";
+			};
+			name = Release;
+		};
+		D9D0B55028259AF500FA8144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK6RDFQAA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarciziu.BachelorsDegreeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BachelorsDegreeApp;
+			};
+			name = Debug;
+		};
+		D9D0B55128259AF500FA8144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK6RDFQAA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tarciziu.BachelorsDegreeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BachelorsDegreeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9D0B52028259AF100FA8144 /* Build configuration list for PBXProject "BachelorsDegreeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D0B54728259AF500FA8144 /* Debug */,
+				D9D0B54828259AF500FA8144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D0B54928259AF500FA8144 /* Build configuration list for PBXNativeTarget "BachelorsDegreeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D0B54A28259AF500FA8144 /* Debug */,
+				D9D0B54B28259AF500FA8144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D0B54C28259AF500FA8144 /* Build configuration list for PBXNativeTarget "BachelorsDegreeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D0B54D28259AF500FA8144 /* Debug */,
+				D9D0B54E28259AF500FA8144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D0B54F28259AF500FA8144 /* Build configuration list for PBXNativeTarget "BachelorsDegreeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D0B55028259AF500FA8144 /* Debug */,
+				D9D0B55128259AF500FA8144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9D0B51D28259AF100FA8144 /* Project object */;
+}
