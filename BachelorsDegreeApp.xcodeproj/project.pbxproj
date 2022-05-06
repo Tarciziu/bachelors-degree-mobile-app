@@ -124,8 +124,8 @@
 				D9D0B52A28259AF100FA8144 /* ContentView.swift */,
 				D9D0B55728259C7100FA8144 /* Features */,
 				D9D0B52E28259AF400FA8144 /* Preview Content */,
-				D9D0B55928259DE300FA8144 /* Resources */,
 				D9D0B56E2825A02900FA8144 /* Utils */,
+				D9D0B55928259DE300FA8144 /* Resources */,
 			);
 			path = BachelorsDegreeApp;
 			sourceTree = "<group>";
