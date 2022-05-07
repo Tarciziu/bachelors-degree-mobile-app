@@ -22,6 +22,7 @@ struct FieldCard: View {
             .font(FontsCatalog.paragraph)
             .foregroundColor(ColorsCatalog.secondaryText)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
       }
       .padding(EdgeInsets(top: 24.0, leading: 16.0, bottom: 24.0, trailing: 16.0))
     }
