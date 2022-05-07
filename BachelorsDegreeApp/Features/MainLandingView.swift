@@ -11,7 +11,7 @@ struct MainLandingView: View {
   @StateObject var authentication = Authentication()
   var body: some View {
     if authentication.isValidated {
-      Text("Authenticated")
+      FieldsListView()
     } else {
       LoginView()
         .environmentObject(authentication)

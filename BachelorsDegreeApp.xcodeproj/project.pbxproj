@@ -28,6 +28,7 @@
 		D9D0B57428267D9C00FA8144 /* MainLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B57328267D9C00FA8144 /* MainLandingView.swift */; };
 		D9D0B57628267E6000FA8144 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B57528267E6000FA8144 /* Authentication.swift */; };
 		D9D0B57A2826815500FA8144 /* FieldCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B5792826815500FA8144 /* FieldCard.swift */; };
+		D9D0B5A02826850A00FA8144 /* FieldsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B59F2826850A00FA8144 /* FieldsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		D9D0B57328267D9C00FA8144 /* MainLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLandingView.swift; sourceTree = "<group>"; };
 		D9D0B57528267E6000FA8144 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		D9D0B5792826815500FA8144 /* FieldCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCard.swift; sourceTree = "<group>"; };
+		D9D0B59F2826850A00FA8144 /* FieldsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				D9D0B5792826815500FA8144 /* FieldCard.swift */,
+				D9D0B59F2826850A00FA8144 /* FieldsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				D9D0B52B28259AF100FA8144 /* LoginView.swift in Sources */,
 				D9D0B5702825A03A00FA8144 /* FontsCatalog.swift in Sources */,
 				D9D0B52928259AF100FA8144 /* BachelorsDegreeAppApp.swift in Sources */,
+				D9D0B5A02826850A00FA8144 /* FieldsListView.swift in Sources */,
 				D9D0B5722825A14F00FA8144 /* ColorsCatalog.swift in Sources */,
 				D9D0B57628267E6000FA8144 /* Authentication.swift in Sources */,
 			);
