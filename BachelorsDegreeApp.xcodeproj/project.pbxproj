@@ -27,6 +27,7 @@
 		D9D0B5722825A14F00FA8144 /* ColorsCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B5712825A14F00FA8144 /* ColorsCatalog.swift */; };
 		D9D0B57428267D9C00FA8144 /* MainLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B57328267D9C00FA8144 /* MainLandingView.swift */; };
 		D9D0B57628267E6000FA8144 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B57528267E6000FA8144 /* Authentication.swift */; };
+		D9D0B57A2826815500FA8144 /* FieldCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B5792826815500FA8144 /* FieldCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		D9D0B5712825A14F00FA8144 /* ColorsCatalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsCatalog.swift; sourceTree = "<group>"; };
 		D9D0B57328267D9C00FA8144 /* MainLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLandingView.swift; sourceTree = "<group>"; };
 		D9D0B57528267E6000FA8144 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		D9D0B5792826815500FA8144 /* FieldCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 		D9D0B55428259C3200FA8144 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D9D0B5792826815500FA8144 /* FieldCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D0B57A2826815500FA8144 /* FieldCard.swift in Sources */,
 				D9D0B57428267D9C00FA8144 /* MainLandingView.swift in Sources */,
 				D9D0B52B28259AF100FA8144 /* LoginView.swift in Sources */,
 				D9D0B5702825A03A00FA8144 /* FontsCatalog.swift in Sources */,
