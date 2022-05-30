@@ -1,0 +1,23 @@
+/* 
+  Localization.strings
+  BachelorsDegreeApp
+
+  Created by Tarciziu Gologan on 30.05.2022.
+  
+*/
+
+// MARK: - Login
+
+"login.button.text" = "LOGIN";
+"login.password.text" = "Password";
+
+// MARK: - Sport Fields
+
+"sportFields.list.title" = "Sport fields";
+"sportFields.list.search.hintText" = "Search for sport fields...";
+"sportFields.list.item.about.title" = "About";
+"sportFields.list.item.button.title" = "Create reservation";
+
+// MARK: - Errors
+
+"error.noInternet" = "No internet connection";

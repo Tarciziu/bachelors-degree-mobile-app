@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9318E2B2843B4A2006D6FBF /* SportFieldsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E2A2843B4A2006D6FBF /* SportFieldsState.swift */; };
+		D9318E2E2843B4FF006D6FBF /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E2D2843B4FF006D6FBF /* LoadingState.swift */; };
+		D9318E312843B51D006D6FBF /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E302843B51D006D6FBF /* RepositoryError.swift */; };
+		D9318E342843B553006D6FBF /* SportField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E332843B553006D6FBF /* SportField.swift */; };
+		D9318E372843B65E006D6FBF /* SportFieldUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E362843B65E006D6FBF /* SportFieldUIModel.swift */; };
+		D9318E392843B7BE006D6FBF /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E382843B7BE006D6FBF /* ImageSource.swift */; };
+		D9318E3B2843BCBA006D6FBF /* SportFieldsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E3A2843BCBA006D6FBF /* SportFieldsRepository.swift */; };
+		D9318E3E2843C039006D6FBF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D9318E3D2843C039006D6FBF /* Alamofire */; };
+		D9318E402843C07F006D6FBF /* MockedSportFieldsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E3F2843C07F006D6FBF /* MockedSportFieldsRepository.swift */; };
+		D9318E422843C2AF006D6FBF /* SportFieldsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E412843C2AF006D6FBF /* SportFieldsService.swift */; };
+		D9318E452843C303006D6FBF /* DefaultSportFieldsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E442843C303006D6FBF /* DefaultSportFieldsService.swift */; };
+		D9318E472843C9E4006D6FBF /* SportFieldsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E462843C9E4006D6FBF /* SportFieldsViewModel.swift */; };
+		D9318E4A2843CAE7006D6FBF /* SportFieldsUIMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E492843CAE7006D6FBF /* SportFieldsUIMapper.swift */; };
+		D9318E4C2843CB25006D6FBF /* DefaultSportFieldsUIMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E4B2843CB25006D6FBF /* DefaultSportFieldsUIMapper.swift */; };
+		D9318E4E2844B338006D6FBF /* FieldDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E4D2844B338006D6FBF /* FieldDetailsScreen.swift */; };
+		D9318E502844B486006D6FBF /* SportFieldDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E4F2844B486006D6FBF /* SportFieldDetailsViewModel.swift */; };
+		D9318E532844BCED006D6FBF /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E522844BCED006D6FBF /* FloatingButton.swift */; };
+		D9318E562844BE29006D6FBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9318E582844BE29006D6FBF /* Localizable.strings */; };
+		D9318E5B2844C1E2006D6FBF /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E5A2844C1E2006D6FBF /* ProgressIndicator.swift */; };
+		D9318E5D2844C648006D6FBF /* CreateReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E5C2844C648006D6FBF /* CreateReservationView.swift */; };
+		D9318E5F2844F3C7006D6FBF /* RealSportFieldsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E5E2844F3C7006D6FBF /* RealSportFieldsRepository.swift */; };
+		D9318E612844F42F006D6FBF /* SportFieldsDTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E602844F42F006D6FBF /* SportFieldsDTOMapper.swift */; };
+		D9318E632844F496006D6FBF /* SportFieldsDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E622844F496006D6FBF /* SportFieldsDTOs.swift */; };
+		D9318E652844F5DD006D6FBF /* AlamofireDataResponsePublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E642844F5DD006D6FBF /* AlamofireDataResponsePublisherExtension.swift */; };
+		D9318E672844F5FF006D6FBF /* ServerErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E662844F5FF006D6FBF /* ServerErrorDTO.swift */; };
+		D9318E692844FC85006D6FBF /* DefaultSportFieldsDTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E682844FC85006D6FBF /* DefaultSportFieldsDTOMapper.swift */; };
+		D9318E6D28450150006D6FBF /* ReservationsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E6C28450150006D6FBF /* ReservationsState.swift */; };
+		D9318E7128450171006D6FBF /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E7028450171006D6FBF /* Reservation.swift */; };
+		D9318E7328450315006D6FBF /* ReservationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E7228450315006D6FBF /* ReservationService.swift */; };
 		D9D0B52928259AF100FA8144 /* BachelorsDegreeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */; };
 		D9D0B52B28259AF100FA8144 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B52A28259AF100FA8144 /* LoginView.swift */; };
 		D9D0B52D28259AF400FA8144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B52C28259AF400FA8144 /* Assets.xcassets */; };
@@ -49,6 +78,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9318E2A2843B4A2006D6FBF /* SportFieldsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldsState.swift; sourceTree = "<group>"; };
+		D9318E2D2843B4FF006D6FBF /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		D9318E302843B51D006D6FBF /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
+		D9318E332843B553006D6FBF /* SportField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportField.swift; sourceTree = "<group>"; };
+		D9318E362843B65E006D6FBF /* SportFieldUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldUIModel.swift; sourceTree = "<group>"; };
+		D9318E382843B7BE006D6FBF /* ImageSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
+		D9318E3A2843BCBA006D6FBF /* SportFieldsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldsRepository.swift; sourceTree = "<group>"; };
+		D9318E3F2843C07F006D6FBF /* MockedSportFieldsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedSportFieldsRepository.swift; sourceTree = "<group>"; };
+		D9318E412843C2AF006D6FBF /* SportFieldsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldsService.swift; sourceTree = "<group>"; };
+		D9318E442843C303006D6FBF /* DefaultSportFieldsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSportFieldsService.swift; sourceTree = "<group>"; };
+		D9318E462843C9E4006D6FBF /* SportFieldsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldsViewModel.swift; sourceTree = "<group>"; };
+		D9318E492843CAE7006D6FBF /* SportFieldsUIMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldsUIMapper.swift; sourceTree = "<group>"; };
+		D9318E4B2843CB25006D6FBF /* DefaultSportFieldsUIMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSportFieldsUIMapper.swift; sourceTree = "<group>"; };
+		D9318E4D2844B338006D6FBF /* FieldDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldDetailsScreen.swift; sourceTree = "<group>"; };
+		D9318E4F2844B486006D6FBF /* SportFieldDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldDetailsViewModel.swift; sourceTree = "<group>"; };
+		D9318E522844BCED006D6FBF /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		D9318E572844BE29006D6FBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D9318E592844BE2B006D6FBF /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D9318E5A2844C1E2006D6FBF /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		D9318E5C2844C648006D6FBF /* CreateReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReservationView.swift; sourceTree = "<group>"; };
+		D9318E5E2844F3C7006D6FBF /* RealSportFieldsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealSportFieldsRepository.swift; sourceTree = "<group>"; };
+		D9318E602844F42F006D6FBF /* SportFieldsDTOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldsDTOMapper.swift; sourceTree = "<group>"; };
+		D9318E622844F496006D6FBF /* SportFieldsDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldsDTOs.swift; sourceTree = "<group>"; };
+		D9318E642844F5DD006D6FBF /* AlamofireDataResponsePublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDataResponsePublisherExtension.swift; sourceTree = "<group>"; };
+		D9318E662844F5FF006D6FBF /* ServerErrorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerErrorDTO.swift; sourceTree = "<group>"; };
+		D9318E682844FC85006D6FBF /* DefaultSportFieldsDTOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSportFieldsDTOMapper.swift; sourceTree = "<group>"; };
+		D9318E6C28450150006D6FBF /* ReservationsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsState.swift; sourceTree = "<group>"; };
+		D9318E7028450171006D6FBF /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		D9318E7228450315006D6FBF /* ReservationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationService.swift; sourceTree = "<group>"; };
 		D9D0B52528259AF100FA8144 /* BachelorsDegreeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BachelorsDegreeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachelorsDegreeAppApp.swift; sourceTree = "<group>"; };
 		D9D0B52A28259AF100FA8144 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -82,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9318E3E2843C039006D6FBF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +161,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9318E2C2843B4F2006D6FBF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E2F2843B50F006D6FBF /* Errors */,
+				D9318E2D2843B4FF006D6FBF /* LoadingState.swift */,
+				D9318E382843B7BE006D6FBF /* ImageSource.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D9318E2F2843B50F006D6FBF /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E302843B51D006D6FBF /* RepositoryError.swift */,
+				D9318E662844F5FF006D6FBF /* ServerErrorDTO.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		D9318E322843B546006D6FBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E332843B553006D6FBF /* SportField.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9318E352843B64C006D6FBF /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E362843B65E006D6FBF /* SportFieldUIModel.swift */,
+			);
+			path = UIModels;
+			sourceTree = "<group>";
+		};
+		D9318E432843C2F0006D6FBF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E412843C2AF006D6FBF /* SportFieldsService.swift */,
+				D9318E442843C303006D6FBF /* DefaultSportFieldsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D9318E482843CACC006D6FBF /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E492843CAE7006D6FBF /* SportFieldsUIMapper.swift */,
+				D9318E4B2843CB25006D6FBF /* DefaultSportFieldsUIMapper.swift */,
+				D9318E602844F42F006D6FBF /* SportFieldsDTOMapper.swift */,
+				D9318E682844FC85006D6FBF /* DefaultSportFieldsDTOMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		D9318E512844BCD2006D6FBF /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E522844BCED006D6FBF /* FloatingButton.swift */,
+				D9318E5A2844C1E2006D6FBF /* ProgressIndicator.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		D9318E6A284500F0006D6FBF /* Reservations */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E6B28450123006D6FBF /* Domain */,
+			);
+			path = Reservations;
+			sourceTree = "<group>";
+		};
+		D9318E6B28450123006D6FBF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E6C28450150006D6FBF /* ReservationsState.swift */,
+				D9318E6E2845015A006D6FBF /* Models */,
+				D9318E6F28450162006D6FBF /* Service */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D9318E6E2845015A006D6FBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E7028450171006D6FBF /* Reservation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9318E6F28450162006D6FBF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E7228450315006D6FBF /* ReservationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		D9D0B51C28259AF100FA8144 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +287,7 @@
 				D9D0B56D28259F0300FA8144 /* Info.plist */,
 				D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */,
 				D9D0B55728259C7100FA8144 /* Features */,
+				D9318E512844BCD2006D6FBF /* ReusableViews */,
 				D9D0B52E28259AF400FA8144 /* Preview Content */,
 				D9D0B56E2825A02900FA8144 /* Utils */,
 				D9D0B55928259DE300FA8144 /* Resources */,
@@ -165,6 +323,9 @@
 		D9D0B55328259C1D00FA8144 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				D9318E2A2843B4A2006D6FBF /* SportFieldsState.swift */,
+				D9318E322843B546006D6FBF /* Models */,
+				D9318E432843C2F0006D6FBF /* Service */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -174,6 +335,8 @@
 			children = (
 				D9D0B5792826815500FA8144 /* FieldCard.swift */,
 				D9D0B59F2826850A00FA8144 /* FieldsListView.swift */,
+				D9318E4D2844B338006D6FBF /* FieldDetailsScreen.swift */,
+				D9318E5C2844C648006D6FBF /* CreateReservationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +344,8 @@
 		D9D0B55528259C3A00FA8144 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D9318E462843C9E4006D6FBF /* SportFieldsViewModel.swift */,
+				D9318E4F2844B486006D6FBF /* SportFieldDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,6 +353,10 @@
 		D9D0B55628259C4600FA8144 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D9318E3A2843BCBA006D6FBF /* SportFieldsRepository.swift */,
+				D9318E3F2843C07F006D6FBF /* MockedSportFieldsRepository.swift */,
+				D9318E5E2844F3C7006D6FBF /* RealSportFieldsRepository.swift */,
+				D9318E622844F496006D6FBF /* SportFieldsDTOs.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -195,10 +364,12 @@
 		D9D0B55728259C7100FA8144 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				D9318E2C2843B4F2006D6FBF /* Common */,
 				D9D0B57328267D9C00FA8144 /* MainLandingView.swift */,
 				D9D0B57528267E6000FA8144 /* Authentication.swift */,
 				D9D0B52A28259AF100FA8144 /* LoginView.swift */,
 				D9D0B55828259C7F00FA8144 /* Fields */,
+				D9318E6A284500F0006D6FBF /* Reservations */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -207,9 +378,11 @@
 			isa = PBXGroup;
 			children = (
 				D9D0B55628259C4600FA8144 /* Data */,
+				D9D0B55328259C1D00FA8144 /* Domain */,
+				D9318E482843CACC006D6FBF /* Mappers */,
+				D9318E352843B64C006D6FBF /* UIModels */,
 				D9D0B55528259C3A00FA8144 /* ViewModel */,
 				D9D0B55428259C3200FA8144 /* Views */,
-				D9D0B55328259C1D00FA8144 /* Domain */,
 			);
 			path = Fields;
 			sourceTree = "<group>";
@@ -219,6 +392,7 @@
 			children = (
 				D9D0B55A28259E1000FA8144 /* Fonts */,
 				D9D0B52C28259AF400FA8144 /* Assets.xcassets */,
+				D9318E582844BE29006D6FBF /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -244,6 +418,7 @@
 			children = (
 				D9D0B5712825A14F00FA8144 /* ColorsCatalog.swift */,
 				D9D0B56F2825A03900FA8144 /* FontsCatalog.swift */,
+				D9318E642844F5DD006D6FBF /* AlamofireDataResponsePublisherExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -264,6 +439,9 @@
 			dependencies = (
 			);
 			name = BachelorsDegreeApp;
+			packageProductDependencies = (
+				D9318E3D2843C039006D6FBF /* Alamofire */,
+			);
 			productName = BachelorsDegreeApp;
 			productReference = D9D0B52528259AF100FA8144 /* BachelorsDegreeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -334,8 +512,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ro,
 			);
 			mainGroup = D9D0B51C28259AF100FA8144;
+			packageReferences = (
+				D9318E3C2843C039006D6FBF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D9D0B52628259AF100FA8144 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -353,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9D0B56728259E1000FA8144 /* Inter-Bold.ttf in Resources */,
+				D9318E562844BE29006D6FBF /* Localizable.strings in Resources */,
 				D9D0B53028259AF400FA8144 /* Preview Assets.xcassets in Resources */,
 				D9D0B52D28259AF400FA8144 /* Assets.xcassets in Resources */,
 				D9D0B56C28259E1000FA8144 /* Inter-SemiBold.ttf in Resources */,
@@ -389,12 +572,39 @@
 			files = (
 				D9D0B57A2826815500FA8144 /* FieldCard.swift in Sources */,
 				D9D0B57428267D9C00FA8144 /* MainLandingView.swift in Sources */,
+				D9318E2E2843B4FF006D6FBF /* LoadingState.swift in Sources */,
+				D9318E422843C2AF006D6FBF /* SportFieldsService.swift in Sources */,
 				D9D0B52B28259AF100FA8144 /* LoginView.swift in Sources */,
+				D9318E4E2844B338006D6FBF /* FieldDetailsScreen.swift in Sources */,
+				D9318E392843B7BE006D6FBF /* ImageSource.swift in Sources */,
+				D9318E7328450315006D6FBF /* ReservationService.swift in Sources */,
+				D9318E632844F496006D6FBF /* SportFieldsDTOs.swift in Sources */,
+				D9318E672844F5FF006D6FBF /* ServerErrorDTO.swift in Sources */,
+				D9318E502844B486006D6FBF /* SportFieldDetailsViewModel.swift in Sources */,
+				D9318E7128450171006D6FBF /* Reservation.swift in Sources */,
+				D9318E612844F42F006D6FBF /* SportFieldsDTOMapper.swift in Sources */,
+				D9318E312843B51D006D6FBF /* RepositoryError.swift in Sources */,
+				D9318E372843B65E006D6FBF /* SportFieldUIModel.swift in Sources */,
 				D9D0B5702825A03A00FA8144 /* FontsCatalog.swift in Sources */,
+				D9318E5D2844C648006D6FBF /* CreateReservationView.swift in Sources */,
 				D9D0B52928259AF100FA8144 /* BachelorsDegreeAppApp.swift in Sources */,
+				D9318E4A2843CAE7006D6FBF /* SportFieldsUIMapper.swift in Sources */,
+				D9318E652844F5DD006D6FBF /* AlamofireDataResponsePublisherExtension.swift in Sources */,
+				D9318E3B2843BCBA006D6FBF /* SportFieldsRepository.swift in Sources */,
+				D9318E6D28450150006D6FBF /* ReservationsState.swift in Sources */,
+				D9318E402843C07F006D6FBF /* MockedSportFieldsRepository.swift in Sources */,
+				D9318E692844FC85006D6FBF /* DefaultSportFieldsDTOMapper.swift in Sources */,
+				D9318E342843B553006D6FBF /* SportField.swift in Sources */,
+				D9318E472843C9E4006D6FBF /* SportFieldsViewModel.swift in Sources */,
+				D9318E4C2843CB25006D6FBF /* DefaultSportFieldsUIMapper.swift in Sources */,
+				D9318E5B2844C1E2006D6FBF /* ProgressIndicator.swift in Sources */,
+				D9318E5F2844F3C7006D6FBF /* RealSportFieldsRepository.swift in Sources */,
 				D9D0B5A02826850A00FA8144 /* FieldsListView.swift in Sources */,
 				D9D0B5722825A14F00FA8144 /* ColorsCatalog.swift in Sources */,
+				D9318E452843C303006D6FBF /* DefaultSportFieldsService.swift in Sources */,
 				D9D0B57628267E6000FA8144 /* Authentication.swift in Sources */,
+				D9318E2B2843B4A2006D6FBF /* SportFieldsState.swift in Sources */,
+				D9318E532844BCED006D6FBF /* FloatingButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +639,18 @@
 			targetProxy = D9D0B54028259AF400FA8144 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9318E582844BE29006D6FBF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9318E572844BE29006D6FBF /* en */,
+				D9318E592844BE2B006D6FBF /* ro */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D9D0B54728259AF500FA8144 /* Debug */ = {
@@ -723,6 +945,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9318E3C2843C039006D6FBF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9318E3D2843C039006D6FBF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9318E3C2843C039006D6FBF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9D0B51D28259AF100FA8144 /* Project object */;
 }

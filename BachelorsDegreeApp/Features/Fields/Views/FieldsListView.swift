@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FieldsListView: View {
+  @StateObject var viewModel: SportFieldsViewModel
+  @EnvironmentObject var dependencies: SportFieldsDependencies
   @State private var searchText = ""
   @State var isPresentingDetails = false
   // TODO: move this to presentation layer
@@ -16,12 +18,30 @@ struct FieldsListView: View {
   var body: some View {
     NavigationView {
       VStack {
-        listView(with: ["a", "b", "c", "d", "f", "h", "i"])
+        listView(with: viewModel.presentationState.currentValue ?? [])
+          .disabled(viewModel.presentationState.isLoading)
+          .overlay {
+            if viewModel.presentationState.isLoading {
+              ProgressView()
+                .frame(maxWidth: .infinity,
+                       maxHeight: .infinity)
+                .background(ColorsCatalog.listBackground)
+            }
+          }
+          .alert(isPresented: .constant(viewModel.presentationState.isFailed),
+                 error: viewModel.presentationState.failureReason,
+                 actions: { _ in
+            Button("OK", role: .cancel) { }
+          },
+                 message: { error in
+            Text(error.failureReason ?? String())
+            
+          })
       }
-      .navigationTitle("Sport fields")
+      .navigationTitle(viewModel.listTitle)
       .searchable(text: $searchText,
                   placement: .navigationBarDrawer(displayMode: .always),
-                  prompt: "Search input...")
+                  prompt: viewModel.searchbarHintText)
       .toolbar {
         ToolbarItemGroup(placement: .navigationBarTrailing) {
           Button {
@@ -50,18 +70,22 @@ struct FieldsListView: View {
     }
     .navigationViewStyle(.stack)
   }
-  private func listView(with fields: [String]) -> some View {
-    var selectedItem = ""
+  private func listView(with fields: [SportFieldUIModel]) -> some View {
+    var selectedItem = -1
     return ScrollView {
       VStack(alignment: .leading, spacing: 16.0) {
         ForEach(fields, id: \.self) { item in
-          FieldCard()
+          FieldCard(model: item)
             .onTapGesture {
-              selectedItem = item
+              selectedItem = item.id
+              debugPrint("\(selectedItem)")
               isPresentingDetails.toggle()
             }
         }
-        NavigationLink(destination: Text(selectedItem+"s"),
+        NavigationLink(destination: FieldDetailsScreen(viewModel: SportFieldDetailsViewModel(service: dependencies.service,
+                                                                                             state: dependencies.state,
+                                                                                             mapper: dependencies.mapper,
+                                                                                             geocoder: dependencies.geocoder, fieldID: selectedItem)),
                        isActive: $isPresentingDetails) {
           EmptyView()
         }
@@ -80,6 +104,15 @@ struct FieldsListView: View {
 
 struct FieldsListView_Previews: PreviewProvider {
   static var previews: some View {
-    FieldsListView()
+    let repository = MockedSportFieldsRepository(timeInterval: 3.0,
+                                                 failAllOperations: false)
+    let state = SportFieldsState()
+    let service = DefaultSportFieldsService(sportFieldsState: state,
+                                            fieldsRepository: repository)
+    let mapper = DefaultSportFieldsUIMapper()
+    let viewModel = SportFieldsViewModel(service: service,
+                                         state: state,
+                                         mapper: mapper)
+    FieldsListView(viewModel: viewModel)
   }
 }

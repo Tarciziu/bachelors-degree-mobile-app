@@ -1,0 +1,23 @@
+/* 
+  Localization.strings
+  BachelorsDegreeApp
+
+  Created by Tarciziu Gologan on 30.05.2022.
+  
+*/
+
+// MARK: - Login
+
+"login.button.text" = "AUTENTIFICĂ-TE";
+"login.password.text" = "Parola";
+
+// MARK: - Sport Fields
+
+"sportFields.list.title" = "Terenuri de sport";
+"sportFields.list.search.hintText" = "Caută terenuri de sport...";
+"sportFields.list.item.about.title" = "Despre";
+"sportFields.list.item.button.title" = "Crează rezervare";
+
+// MARK: - Errors
+
+"error.noInternet" = "Fără conexiune la internet";

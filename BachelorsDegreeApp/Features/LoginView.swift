@@ -13,10 +13,11 @@ struct LoginView: View {
   @State var username: String = ""
   @State var password: String = ""
   
+  // TODO: - MOVE THESE TO PRESENTATION LAYER
   let loginImageString = "Login"
-  let loginButtonText = "LOGIN"
+  let loginButtonText = NSLocalizedString("login.button.text", comment: "")
   let emailText = "E-mail"
-  let passwordText = "Password"
+  let passwordText = NSLocalizedString("login.password.text", comment: "")
   
   var body: some View {
     VStack {

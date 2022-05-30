@@ -16,4 +16,5 @@ enum FontsCatalog {
     static let inputText = Font.custom("Inter-Regular", size: 17.0)
     static let confirmationButton = Font.custom("Inter-Semibold", size: 20.0)
     static let confirmationTitle = Font.custom("Inter-Semibold", size: 24.0)
+  static let listItemLocation = Font.custom("Inter-Regular", size: 17.0)
 }
