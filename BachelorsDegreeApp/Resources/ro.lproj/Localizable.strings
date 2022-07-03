@@ -18,6 +18,10 @@
 "sportFields.list.item.about.title" = "Despre";
 "sportFields.list.item.button.title" = "Crează rezervare";
 
+// MARK: - My Reservations
+
+"myReservations.list.title" = "Rezervările mele";
+
 // MARK: - Errors
 
 "error.noInternet" = "Fără conexiune la internet";

@@ -18,7 +18,6 @@
 		D9318E402843C07F006D6FBF /* MockedSportFieldsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E3F2843C07F006D6FBF /* MockedSportFieldsRepository.swift */; };
 		D9318E422843C2AF006D6FBF /* SportFieldsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E412843C2AF006D6FBF /* SportFieldsService.swift */; };
 		D9318E452843C303006D6FBF /* DefaultSportFieldsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E442843C303006D6FBF /* DefaultSportFieldsService.swift */; };
-		D9318E472843C9E4006D6FBF /* SportFieldsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E462843C9E4006D6FBF /* SportFieldsViewModel.swift */; };
 		D9318E4A2843CAE7006D6FBF /* SportFieldsUIMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E492843CAE7006D6FBF /* SportFieldsUIMapper.swift */; };
 		D9318E4C2843CB25006D6FBF /* DefaultSportFieldsUIMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E4B2843CB25006D6FBF /* DefaultSportFieldsUIMapper.swift */; };
 		D9318E4E2844B338006D6FBF /* FieldDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E4D2844B338006D6FBF /* FieldDetailsScreen.swift */; };
@@ -36,6 +35,19 @@
 		D9318E6D28450150006D6FBF /* ReservationsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E6C28450150006D6FBF /* ReservationsState.swift */; };
 		D9318E7128450171006D6FBF /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E7028450171006D6FBF /* Reservation.swift */; };
 		D9318E7328450315006D6FBF /* ReservationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E7228450315006D6FBF /* ReservationService.swift */; };
+		D9318E76286B8258006D6FBF /* ReservationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E75286B8258006D6FBF /* ReservationRepository.swift */; };
+		D9318E78286B82C9006D6FBF /* ReservationDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E77286B82C9006D6FBF /* ReservationDTOs.swift */; };
+		D9318E7A286B847D006D6FBF /* RealReservationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E79286B847D006D6FBF /* RealReservationRepository.swift */; };
+		D9318E7D286B8587006D6FBF /* ReservationDTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E7C286B8587006D6FBF /* ReservationDTOMapper.swift */; };
+		D9318E7F286B85FA006D6FBF /* DefaultReservationDTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E7E286B85FA006D6FBF /* DefaultReservationDTOMapper.swift */; };
+		D9318E81286B86F8006D6FBF /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E80286B86F8006D6FBF /* DateFormatterExtension.swift */; };
+		D9318E83286B8751006D6FBF /* DateFormattersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E82286B8751006D6FBF /* DateFormattersStore.swift */; };
+		D9318E85286B8DA8006D6FBF /* DefaultReservationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E84286B8DA8006D6FBF /* DefaultReservationService.swift */; };
+		D9318E8A286B9078006D6FBF /* ReservationUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E89286B9078006D6FBF /* ReservationUIModel.swift */; };
+		D9318E8C286B9238006D6FBF /* ReservationUIMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E8B286B9238006D6FBF /* ReservationUIMapper.swift */; };
+		D9318E8E286B9274006D6FBF /* DefaultReservationUIMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E8D286B9274006D6FBF /* DefaultReservationUIMapper.swift */; };
+		D9318E90286B9A81006D6FBF /* ReservationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E8F286B9A81006D6FBF /* ReservationsListView.swift */; };
+		D9318E92286B9AE3006D6FBF /* ReservationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318E91286B9AE3006D6FBF /* ReservationsViewModel.swift */; };
 		D9D0B52928259AF100FA8144 /* BachelorsDegreeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */; };
 		D9D0B52B28259AF100FA8144 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B52A28259AF100FA8144 /* LoginView.swift */; };
 		D9D0B52D28259AF400FA8144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D0B52C28259AF400FA8144 /* Assets.xcassets */; };
@@ -58,6 +70,11 @@
 		D9D0B57628267E6000FA8144 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B57528267E6000FA8144 /* Authentication.swift */; };
 		D9D0B57A2826815500FA8144 /* FieldCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B5792826815500FA8144 /* FieldCard.swift */; };
 		D9D0B5A02826850A00FA8144 /* FieldsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0B59F2826850A00FA8144 /* FieldsListView.swift */; };
+		D9E29CE6286B9D6000638EDA /* ReservationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E29CE5286B9D6000638EDA /* ReservationCard.swift */; };
+		D9E29CE8286B9EED00638EDA /* MockedReservationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E29CE7286B9EED00638EDA /* MockedReservationRepository.swift */; };
+		D9E29CEA286C45B300638EDA /* ReservationDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E29CE9286C45B300638EDA /* ReservationDetailsScreen.swift */; };
+		D9E29CEC286C46F200638EDA /* ReservationDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E29CEB286C46F200638EDA /* ReservationDetailsViewModel.swift */; };
+		D9E29CF0286C4DBF00638EDA /* SportFieldsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E29CEF286C4DBF00638EDA /* SportFieldsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +105,6 @@
 		D9318E3F2843C07F006D6FBF /* MockedSportFieldsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedSportFieldsRepository.swift; sourceTree = "<group>"; };
 		D9318E412843C2AF006D6FBF /* SportFieldsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldsService.swift; sourceTree = "<group>"; };
 		D9318E442843C303006D6FBF /* DefaultSportFieldsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSportFieldsService.swift; sourceTree = "<group>"; };
-		D9318E462843C9E4006D6FBF /* SportFieldsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldsViewModel.swift; sourceTree = "<group>"; };
 		D9318E492843CAE7006D6FBF /* SportFieldsUIMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportFieldsUIMapper.swift; sourceTree = "<group>"; };
 		D9318E4B2843CB25006D6FBF /* DefaultSportFieldsUIMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSportFieldsUIMapper.swift; sourceTree = "<group>"; };
 		D9318E4D2844B338006D6FBF /* FieldDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldDetailsScreen.swift; sourceTree = "<group>"; };
@@ -107,6 +123,19 @@
 		D9318E6C28450150006D6FBF /* ReservationsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsState.swift; sourceTree = "<group>"; };
 		D9318E7028450171006D6FBF /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
 		D9318E7228450315006D6FBF /* ReservationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationService.swift; sourceTree = "<group>"; };
+		D9318E75286B8258006D6FBF /* ReservationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationRepository.swift; sourceTree = "<group>"; };
+		D9318E77286B82C9006D6FBF /* ReservationDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDTOs.swift; sourceTree = "<group>"; };
+		D9318E79286B847D006D6FBF /* RealReservationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealReservationRepository.swift; sourceTree = "<group>"; };
+		D9318E7C286B8587006D6FBF /* ReservationDTOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDTOMapper.swift; sourceTree = "<group>"; };
+		D9318E7E286B85FA006D6FBF /* DefaultReservationDTOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReservationDTOMapper.swift; sourceTree = "<group>"; };
+		D9318E80286B86F8006D6FBF /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		D9318E82286B8751006D6FBF /* DateFormattersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormattersStore.swift; sourceTree = "<group>"; };
+		D9318E84286B8DA8006D6FBF /* DefaultReservationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReservationService.swift; sourceTree = "<group>"; };
+		D9318E89286B9078006D6FBF /* ReservationUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationUIModel.swift; sourceTree = "<group>"; };
+		D9318E8B286B9238006D6FBF /* ReservationUIMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationUIMapper.swift; sourceTree = "<group>"; };
+		D9318E8D286B9274006D6FBF /* DefaultReservationUIMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReservationUIMapper.swift; sourceTree = "<group>"; };
+		D9318E8F286B9A81006D6FBF /* ReservationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsListView.swift; sourceTree = "<group>"; };
+		D9318E91286B9AE3006D6FBF /* ReservationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsViewModel.swift; sourceTree = "<group>"; };
 		D9D0B52528259AF100FA8144 /* BachelorsDegreeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BachelorsDegreeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D0B52828259AF100FA8144 /* BachelorsDegreeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachelorsDegreeAppApp.swift; sourceTree = "<group>"; };
 		D9D0B52A28259AF100FA8144 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -133,6 +162,11 @@
 		D9D0B57528267E6000FA8144 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		D9D0B5792826815500FA8144 /* FieldCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCard.swift; sourceTree = "<group>"; };
 		D9D0B59F2826850A00FA8144 /* FieldsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsListView.swift; sourceTree = "<group>"; };
+		D9E29CE5286B9D6000638EDA /* ReservationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationCard.swift; sourceTree = "<group>"; };
+		D9E29CE7286B9EED00638EDA /* MockedReservationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedReservationRepository.swift; sourceTree = "<group>"; };
+		D9E29CE9286C45B300638EDA /* ReservationDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailsScreen.swift; sourceTree = "<group>"; };
+		D9E29CEB286C46F200638EDA /* ReservationDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailsViewModel.swift; sourceTree = "<group>"; };
+		D9E29CEF286C4DBF00638EDA /* SportFieldsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportFieldsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +201,7 @@
 				D9318E2F2843B50F006D6FBF /* Errors */,
 				D9318E2D2843B4FF006D6FBF /* LoadingState.swift */,
 				D9318E382843B7BE006D6FBF /* ImageSource.swift */,
+				D9318E82286B8751006D6FBF /* DateFormattersStore.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -228,7 +263,12 @@
 		D9318E6A284500F0006D6FBF /* Reservations */ = {
 			isa = PBXGroup;
 			children = (
+				D9318E74286B8240006D6FBF /* Data */,
 				D9318E6B28450123006D6FBF /* Domain */,
+				D9318E7B286B856C006D6FBF /* Mappers */,
+				D9318E86286B9047006D6FBF /* UIModels */,
+				D9318E87286B9056006D6FBF /* ViewModel */,
+				D9318E88286B905F006D6FBF /* View */,
 			);
 			path = Reservations;
 			sourceTree = "<group>";
@@ -255,8 +295,58 @@
 			isa = PBXGroup;
 			children = (
 				D9318E7228450315006D6FBF /* ReservationService.swift */,
+				D9318E84286B8DA8006D6FBF /* DefaultReservationService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		D9318E74286B8240006D6FBF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E75286B8258006D6FBF /* ReservationRepository.swift */,
+				D9318E77286B82C9006D6FBF /* ReservationDTOs.swift */,
+				D9318E79286B847D006D6FBF /* RealReservationRepository.swift */,
+				D9E29CE7286B9EED00638EDA /* MockedReservationRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D9318E7B286B856C006D6FBF /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E7C286B8587006D6FBF /* ReservationDTOMapper.swift */,
+				D9318E7E286B85FA006D6FBF /* DefaultReservationDTOMapper.swift */,
+				D9318E8B286B9238006D6FBF /* ReservationUIMapper.swift */,
+				D9318E8D286B9274006D6FBF /* DefaultReservationUIMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		D9318E86286B9047006D6FBF /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E89286B9078006D6FBF /* ReservationUIModel.swift */,
+			);
+			path = UIModels;
+			sourceTree = "<group>";
+		};
+		D9318E87286B9056006D6FBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E91286B9AE3006D6FBF /* ReservationsViewModel.swift */,
+				D9E29CEB286C46F200638EDA /* ReservationDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D9318E88286B905F006D6FBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9318E8F286B9A81006D6FBF /* ReservationsListView.swift */,
+				D9E29CE5286B9D6000638EDA /* ReservationCard.swift */,
+				D9E29CE9286C45B300638EDA /* ReservationDetailsScreen.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D9D0B51C28259AF100FA8144 = {
@@ -344,7 +434,7 @@
 		D9D0B55528259C3A00FA8144 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D9318E462843C9E4006D6FBF /* SportFieldsViewModel.swift */,
+				D9E29CEF286C4DBF00638EDA /* SportFieldsViewModel.swift */,
 				D9318E4F2844B486006D6FBF /* SportFieldDetailsViewModel.swift */,
 			);
 			path = ViewModel;
@@ -419,6 +509,7 @@
 				D9D0B5712825A14F00FA8144 /* ColorsCatalog.swift */,
 				D9D0B56F2825A03900FA8144 /* FontsCatalog.swift */,
 				D9318E642844F5DD006D6FBF /* AlamofireDataResponsePublisherExtension.swift */,
+				D9318E80286B86F8006D6FBF /* DateFormatterExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -577,34 +668,51 @@
 				D9D0B52B28259AF100FA8144 /* LoginView.swift in Sources */,
 				D9318E4E2844B338006D6FBF /* FieldDetailsScreen.swift in Sources */,
 				D9318E392843B7BE006D6FBF /* ImageSource.swift in Sources */,
+				D9318E92286B9AE3006D6FBF /* ReservationsViewModel.swift in Sources */,
 				D9318E7328450315006D6FBF /* ReservationService.swift in Sources */,
+				D9318E7A286B847D006D6FBF /* RealReservationRepository.swift in Sources */,
+				D9318E76286B8258006D6FBF /* ReservationRepository.swift in Sources */,
+				D9E29CE8286B9EED00638EDA /* MockedReservationRepository.swift in Sources */,
 				D9318E632844F496006D6FBF /* SportFieldsDTOs.swift in Sources */,
 				D9318E672844F5FF006D6FBF /* ServerErrorDTO.swift in Sources */,
 				D9318E502844B486006D6FBF /* SportFieldDetailsViewModel.swift in Sources */,
+				D9318E85286B8DA8006D6FBF /* DefaultReservationService.swift in Sources */,
 				D9318E7128450171006D6FBF /* Reservation.swift in Sources */,
 				D9318E612844F42F006D6FBF /* SportFieldsDTOMapper.swift in Sources */,
 				D9318E312843B51D006D6FBF /* RepositoryError.swift in Sources */,
 				D9318E372843B65E006D6FBF /* SportFieldUIModel.swift in Sources */,
+				D9E29CE6286B9D6000638EDA /* ReservationCard.swift in Sources */,
 				D9D0B5702825A03A00FA8144 /* FontsCatalog.swift in Sources */,
+				D9318E90286B9A81006D6FBF /* ReservationsListView.swift in Sources */,
 				D9318E5D2844C648006D6FBF /* CreateReservationView.swift in Sources */,
+				D9E29CEC286C46F200638EDA /* ReservationDetailsViewModel.swift in Sources */,
+				D9318E8A286B9078006D6FBF /* ReservationUIModel.swift in Sources */,
 				D9D0B52928259AF100FA8144 /* BachelorsDegreeAppApp.swift in Sources */,
 				D9318E4A2843CAE7006D6FBF /* SportFieldsUIMapper.swift in Sources */,
 				D9318E652844F5DD006D6FBF /* AlamofireDataResponsePublisherExtension.swift in Sources */,
 				D9318E3B2843BCBA006D6FBF /* SportFieldsRepository.swift in Sources */,
+				D9318E81286B86F8006D6FBF /* DateFormatterExtension.swift in Sources */,
 				D9318E6D28450150006D6FBF /* ReservationsState.swift in Sources */,
 				D9318E402843C07F006D6FBF /* MockedSportFieldsRepository.swift in Sources */,
 				D9318E692844FC85006D6FBF /* DefaultSportFieldsDTOMapper.swift in Sources */,
 				D9318E342843B553006D6FBF /* SportField.swift in Sources */,
-				D9318E472843C9E4006D6FBF /* SportFieldsViewModel.swift in Sources */,
+				D9318E8C286B9238006D6FBF /* ReservationUIMapper.swift in Sources */,
 				D9318E4C2843CB25006D6FBF /* DefaultSportFieldsUIMapper.swift in Sources */,
 				D9318E5B2844C1E2006D6FBF /* ProgressIndicator.swift in Sources */,
 				D9318E5F2844F3C7006D6FBF /* RealSportFieldsRepository.swift in Sources */,
+				D9318E83286B8751006D6FBF /* DateFormattersStore.swift in Sources */,
 				D9D0B5A02826850A00FA8144 /* FieldsListView.swift in Sources */,
 				D9D0B5722825A14F00FA8144 /* ColorsCatalog.swift in Sources */,
 				D9318E452843C303006D6FBF /* DefaultSportFieldsService.swift in Sources */,
 				D9D0B57628267E6000FA8144 /* Authentication.swift in Sources */,
 				D9318E2B2843B4A2006D6FBF /* SportFieldsState.swift in Sources */,
+				D9318E7D286B8587006D6FBF /* ReservationDTOMapper.swift in Sources */,
+				D9318E7F286B85FA006D6FBF /* DefaultReservationDTOMapper.swift in Sources */,
+				D9318E78286B82C9006D6FBF /* ReservationDTOs.swift in Sources */,
+				D9E29CF0286C4DBF00638EDA /* SportFieldsViewModel.swift in Sources */,
+				D9318E8E286B9274006D6FBF /* DefaultReservationUIMapper.swift in Sources */,
 				D9318E532844BCED006D6FBF /* FloatingButton.swift in Sources */,
+				D9E29CEA286C45B300638EDA /* ReservationDetailsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

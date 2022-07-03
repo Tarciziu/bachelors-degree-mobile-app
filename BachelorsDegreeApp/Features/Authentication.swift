@@ -9,6 +9,7 @@ import Foundation
 
 class Authentication: ObservableObject {
   @Published var isValidated = false
+  @Published var email = ""
   
   enum AuthenticationError: Error, LocalizedError, Identifiable {
     case invalidCredentials
@@ -27,5 +28,9 @@ class Authentication: ObservableObject {
   
   func updateValidation(success: Bool) {
     isValidated = success
+  }
+  
+  func updateEmail(email: String) {
+    self.email = email
   }
 }

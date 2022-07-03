@@ -18,6 +18,10 @@
 "sportFields.list.item.about.title" = "About";
 "sportFields.list.item.button.title" = "Create reservation";
 
+// MARK: - My Reservations
+
+"myReservations.list.title" = "My reservations";
+
 // MARK: - Errors
 
 "error.noInternet" = "No internet connection";

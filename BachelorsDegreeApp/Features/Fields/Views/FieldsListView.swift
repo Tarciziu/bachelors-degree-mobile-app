@@ -10,6 +10,7 @@ import SwiftUI
 struct FieldsListView: View {
   @StateObject var viewModel: SportFieldsViewModel
   @EnvironmentObject var dependencies: SportFieldsDependencies
+  @EnvironmentObject var reservationDependencies: ReservationsDependencies
   @State private var searchText = ""
   @State var isPresentingDetails = false
   // TODO: move this to presentation layer
@@ -18,6 +19,7 @@ struct FieldsListView: View {
   var body: some View {
     NavigationView {
       VStack {
+        Text("Gologan Christin-Tarciziu")
         listView(with: viewModel.presentationState.currentValue ?? [])
           .disabled(viewModel.presentationState.isLoading)
           .overlay {
@@ -39,34 +41,7 @@ struct FieldsListView: View {
           })
       }
       .navigationTitle(viewModel.listTitle)
-      .searchable(text: $searchText,
-                  placement: .navigationBarDrawer(displayMode: .always),
-                  prompt: viewModel.searchbarHintText)
-      .toolbar {
-        ToolbarItemGroup(placement: .navigationBarTrailing) {
-          Button {
-            showFilters = true
-          }
-        label: {
-          Image("Filter")
-        }
-        .accentColor(ColorsCatalog.primaryText)
-        }
-      }
       .background(ColorsCatalog.listBackground)
-      .sheet(isPresented: $showFilters) {
-        NavigationView {
-          Text("Filters")
-            .toolbar {
-              Button {
-                self.showFilters.toggle()
-              } label: {
-                Image("Close")
-              }
-              .foregroundColor(ColorsCatalog.primaryText)
-            }
-        }
-      }
     }
     .navigationViewStyle(.stack)
   }
@@ -85,7 +60,10 @@ struct FieldsListView: View {
         NavigationLink(destination: FieldDetailsScreen(viewModel: SportFieldDetailsViewModel(service: dependencies.service,
                                                                                              state: dependencies.state,
                                                                                              mapper: dependencies.mapper,
-                                                                                             geocoder: dependencies.geocoder, fieldID: selectedItem)),
+                                                                                             reservationsState: reservationDependencies.state,
+                                                                                             reservationService: reservationDependencies.service,
+                                                                                             geocoder: dependencies.geocoder, fieldID: selectedItem,
+                                                                                             loggedUserId: viewModel.loggedUserId)),
                        isActive: $isPresentingDetails) {
           EmptyView()
         }
@@ -110,9 +88,11 @@ struct FieldsListView_Previews: PreviewProvider {
     let service = DefaultSportFieldsService(sportFieldsState: state,
                                             fieldsRepository: repository)
     let mapper = DefaultSportFieldsUIMapper()
+    let loggedUserId = ""
     let viewModel = SportFieldsViewModel(service: service,
                                          state: state,
-                                         mapper: mapper)
+                                         mapper: mapper,
+                                         loggedUserId: loggedUserId)
     FieldsListView(viewModel: viewModel)
   }
 }

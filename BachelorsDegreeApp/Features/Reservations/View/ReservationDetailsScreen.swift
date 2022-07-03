@@ -1,17 +1,16 @@
 //
-//  FieldDetailsScreen.swift
+//  ReservationDetailsScreen.swift
 //  BachelorsDegreeApp
 //
-//  Created by Tarciziu Gologan on 30.05.2022.
+//  Created by Tarciziu Gologan on 29.06.2022.
 //
 
 import SwiftUI
 import CoreLocation
 
-struct FieldDetailsScreen: View {
-  @StateObject var viewModel: SportFieldDetailsViewModel
+struct ReservationDetailsScreen: View {
+  @StateObject var viewModel: ReservationDetailsViewModel
   @Environment(\.openURL) var openURL
-  @State var showCreateReservation = false
   
   var body: some View {
     detailsView(with: viewModel.presentationState.currentValue)
@@ -30,28 +29,15 @@ struct FieldDetailsScreen: View {
         Text(error.failureReason ?? String())
         
       })
-      .sheet(isPresented: $showCreateReservation) {
-        NavigationView {
-          CreateReservationView(viewModel: viewModel, showState: $showCreateReservation)
-            .toolbar {
-              Button {
-                self.showCreateReservation.toggle()
-              } label: {
-                Image("Close")
-              }
-              .foregroundColor(ColorsCatalog.primaryText)
-            }
-        }
-      }
   }
   
-  private func detailsView(with model: SportFieldUIModel?) -> some View {
+  private func detailsView(with model: ReservationUIModel?) -> some View {
     let defaultSportFieldImage = "Login"
-    return ZStack {
+    return VStack {
       if let model = model {
         ScrollView {
           VStack(alignment: .leading, spacing: 28.0) {
-            switch model.image {
+            switch model.sportField.image {
             case .url(let source):
               AsyncImage(url: source) { img in
                 img
@@ -73,31 +59,42 @@ struct FieldDetailsScreen: View {
             }
             
             VStack(alignment: .leading, spacing: 32.0) {
+              
               informations(with: model)
               
-              aboutSection(description: model.description)
+              aboutSection(description: model.sportField.description)
               
               Spacer()
             }
             .padding(24.0)
           }
         }
-        
-        floatingButton(with: model)
-        
       } else {
         EmptyView()
       }
     }
   }
   
-  private func informations(with model: SportFieldUIModel) -> some View {
+  private func dateTime(with model: ReservationUIModel) -> some View {
+    return VStack(alignment: .leading, spacing: 0.0) {
+      Text(model.date)
+        .font(FontsCatalog.listItemLocation)
+        .foregroundColor(ColorsCatalog.secondaryText)
+      Text(model.hour)
+        .font(FontsCatalog.listItemLocation)
+        .foregroundColor(ColorsCatalog.secondaryText)
+    }
+  }
+  
+  private func informations(with model: ReservationUIModel) -> some View {
     return VStack(alignment: .leading, spacing: 16.0) {
-      Text(model.title)
+      Text(model.sportField.title)
         .foregroundColor(ColorsCatalog.accent)
         .font(FontsCatalog.heading1)
       
-      locationSection(with: model)
+      locationSection(with: model.sportField)
+      
+      dateTime(with: model)
     }
   }
   
@@ -137,21 +134,6 @@ struct FieldDetailsScreen: View {
         .foregroundColor(ColorsCatalog.secondaryText)
     }
   }
-  
-  private func floatingButton(with model: SportFieldUIModel) -> some View {
-    return FloatingButton(text: viewModel.createReservationButtonText,
-                          action: {
-      
-      self.showCreateReservation.toggle()
-    },
-                          maxHeight: 50.0,
-                          foregroundColor: .white,
-                          font: FontsCatalog.confirmationButton,
-                          clipShape: RoundedRectangle(cornerRadius: 12.0),
-                          backgroundColor: ColorsCatalog.primaryText)
-      .padding(.horizontal, 26.0)
-      .padding(.bottom, 12.0)
-  }
 }
 
 private extension Image {
@@ -163,28 +145,20 @@ private extension Image {
   }
 }
 
-struct FieldDetailsScreen_Previews: PreviewProvider {
+struct ReservationDetailsScreen_Previews: PreviewProvider {
   static var previews: some View {
-    let repository = MockedSportFieldsRepository(timeInterval: 3.0,
+    let repository = MockedReservationRepository(timeInterval: 3.0,
                                                  failAllOperations: false)
-    let state = SportFieldsState()
-    let service = DefaultSportFieldsService(sportFieldsState: state,
-                                            fieldsRepository: repository)
-    let mapper = DefaultSportFieldsUIMapper()
+    let state = ReservationsState()
+    let service = DefaultReservationService(reservationState: state,
+                                            reservationRepository: repository)
+    let mapper = DefaultReservationUIMapper()
     let geocoder = CLGeocoder()
-    
-    let resState = ReservationsState()
-    
-    let resService = DefaultReservationService(reservationState: resState,
-                                              reservationRepository: MockedReservationRepository(timeInterval: 1.0))
-    
-    let viewModel = SportFieldDetailsViewModel(service: service,
-                                               state: state,
-                                               mapper: mapper,
-                                               reservationsState: resState,
-                                               reservationService: resService,
-                                               geocoder: geocoder,
-                                               fieldID: 1, loggedUserId: "mail@mail.com")
-    FieldDetailsScreen(viewModel: viewModel)
+    let viewModel = ReservationDetailsViewModel(service: service,
+                                                state: state,
+                                                mapper: mapper,
+                                                geocoder: geocoder,
+                                                reservationID: 1)
+    ReservationDetailsScreen(viewModel: viewModel)
   }
 }

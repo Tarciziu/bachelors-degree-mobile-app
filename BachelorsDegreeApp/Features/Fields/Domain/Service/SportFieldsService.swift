@@ -11,5 +11,6 @@ protocol SportFieldsService {
   func addField(field: SportField)
   func updateField(updatedField: SportField)
   func deleteField(field: SportField)
+  func getValidHours(fieldID: Int, date: Date)
   func fetchAllSportFields()
 }

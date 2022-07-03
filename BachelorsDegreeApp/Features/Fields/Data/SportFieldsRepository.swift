@@ -12,5 +12,6 @@ protocol SportFieldsRepository {
   func add(field: SportField) -> AnyPublisher<SportField, RepositoryError>
   func update(updatedField: SportField) -> AnyPublisher<SportField, RepositoryError>
   func delete(field: SportField) -> AnyPublisher<SportField, RepositoryError>
+  func getValidHours(fieldID: Int, dateStr: String) -> AnyPublisher<[Int], RepositoryError>
   func getAllFieldsPublisher() -> AnyPublisher<[SportField], RepositoryError>
 }

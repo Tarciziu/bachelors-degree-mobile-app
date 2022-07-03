@@ -8,8 +8,8 @@
 import Foundation
 
 protocol ReservationService {
-  func addReservation(reservation: Reservation)
+  func addReservation(reservation: Reservation, userId: String)
   func updateReservation(updatedReservation: Reservation)
   func deleteReservation(reservation: Reservation)
-  func fetchAllReservations()
+  func fetchAllReservations(userId: String)
 }

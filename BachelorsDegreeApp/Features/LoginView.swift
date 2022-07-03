@@ -25,8 +25,9 @@ struct LoginView: View {
       emailTextField
       passwordTextField
       Button(action: {
-        // TODO: ADD HANDLER FOR LOGIN
+        // TODO: ADD HANDLER FOR LOGIN de verificat daca e realizat cu succes
         authentication.updateValidation(success: true)
+        authentication.updateEmail(email: username)
       }) {
         loginButtonContent
       }

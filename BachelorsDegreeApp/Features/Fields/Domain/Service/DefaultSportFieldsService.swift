@@ -88,6 +88,24 @@ class DefaultSportFieldsService: SportFieldsService {
       .store(in: &subscriptions)
   }
   
+  func getValidHours(fieldID: Int, date: Date) {
+    let hours = fieldsRepository.getValidHours(fieldID: fieldID, dateStr: DateFormattersStore.domainDateFormatter.string(from: date))
+    return hours.sink(receiveCompletion: { completion in
+      switch completion {
+      case .finished:
+        debugPrint("Succes: Event fetched successfuly!")
+      case .failure(let fieldsError):
+        debugPrint("Fetch Operation failed: \(fieldsError)")
+        self.endLoading(error: fieldsError)
+      }
+    }, receiveValue: handleFetchAllHours)
+      .store(in: &subscriptions)
+  }
+  
+  private func handleFetchAllHours(value: [Int]) {
+    state.hours = .loaded(newValue: value)
+  }
+  
   func fetchAllSportFields() {
     beginLoading()
     let fieldsPublisher = fieldsRepository.getAllFieldsPublisher()

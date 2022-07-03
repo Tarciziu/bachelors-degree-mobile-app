@@ -8,5 +8,5 @@
 import Foundation
 
 class ReservationsState: ObservableObject {
-  @Published var sportsState: LoadingState<[Reservation], RepositoryError> = .loading()
+  @Published var reservationsState: LoadingState<[Reservation], RepositoryError> = .loading()
 }

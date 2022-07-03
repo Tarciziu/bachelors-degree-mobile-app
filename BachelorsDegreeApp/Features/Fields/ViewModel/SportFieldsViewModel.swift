@@ -34,6 +34,8 @@ class SportFieldsViewModel: ObservableObject {
   
   let listTitle = NSLocalizedString("sportFields.list.title", comment: "")
   let searchbarHintText = NSLocalizedString("sportFields.list.search.hintText", comment: "")
+  var loggedUserId: String
+  
 //
 //  let aboutSectionTitle = NSLocalizedString("supportGroups.list.item.about.title", comment: "")
 //  let occurrence = NSLocalizedString("supportGroups.list.item.details.occurrence", comment: "")
@@ -52,10 +54,12 @@ class SportFieldsViewModel: ObservableObject {
   
   init(service: SportFieldsService,
        state: SportFieldsState,
-       mapper: SportFieldsUIMapper) {
+       mapper: SportFieldsUIMapper,
+       loggedUserId: String) {
     self.service = service
     self.state = state
     self.mapper = mapper
+    self.loggedUserId = loggedUserId
     
     // Setup
     self.attachToState()

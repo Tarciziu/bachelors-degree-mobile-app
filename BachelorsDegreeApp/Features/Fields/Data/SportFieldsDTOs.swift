@@ -43,5 +43,13 @@ enum SportFieldsDTOs {
       case sport
     }
   }
+  
+  struct ValidHours: Decodable {
+    let hours: String
+    
+    enum CodingKeys: String, CodingKey {
+      case hours
+    }
+  }
 }
 

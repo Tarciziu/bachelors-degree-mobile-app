@@ -88,6 +88,20 @@ class MockedSportFieldsRepository: SportFieldsRepository {
     .eraseToAnyPublisher()
   }
   
+  func convertToInt(_ values: [Int]) -> [Int] {
+    return values
+  }
+  
+  func getValidHours(fieldID: Int, dateStr: String) -> AnyPublisher<[Int], RepositoryError> {
+    return Future<[Int], RepositoryError> { promise in
+      DispatchQueue.global(qos: .background).async {
+        
+        promise(.success([9, 10, 11]))
+      }
+    }
+    .eraseToAnyPublisher()
+  }
+  
   func getAllFieldsPublisher() -> AnyPublisher<[SportField], RepositoryError> {
     return Future<[SportField], RepositoryError> { promise in
       DispatchQueue.global(qos: .background).async {

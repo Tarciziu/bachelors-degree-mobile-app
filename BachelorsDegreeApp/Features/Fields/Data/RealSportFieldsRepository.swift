@@ -63,6 +63,29 @@ class RealSportFieldsRepository: SportFieldsRepository {
           .eraseToAnyPublisher()
   }
   
+  func convertToInt(_ values: SportFieldsDTOs.ValidHours) -> [Int] {
+    let values = values.hours.split(separator: "-")
+    var hours: [Int] = []
+    
+    for h in values {
+      if let validHour = Int(h) {
+        hours.append(validHour)
+      }
+    }
+    
+    return hours
+  }
+  
+  func getValidHours(fieldID: Int, dateStr: String) -> AnyPublisher<[Int], RepositoryError> {
+    let validHoursURL = "\(baseURL)/schedule?sportFieldId=\(fieldID)&date=\(dateStr)"
+    debugPrint(validHoursURL)
+    return session.request(validHoursURL, method: .get)
+          .validate()
+          .publishDecodable(type: SportFieldsDTOs.ValidHours.self)
+          .tryCustomMap(convertToInt)
+          .eraseToAnyPublisher()
+  }
+  
   func getAllFieldsPublisher() -> AnyPublisher<[SportField], RepositoryError> {
     //let getAllEventsURL = "\(baseURL)?userId=\(loggedUserIdentifier)"
     return session.request(baseURL, method: .get)

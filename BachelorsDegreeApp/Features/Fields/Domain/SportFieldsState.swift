@@ -9,4 +9,5 @@ import Foundation
 
 class SportFieldsState: ObservableObject {
   @Published var sportsState: LoadingState<[SportField], RepositoryError> = .loading()
+  @Published var hours: LoadingState<[Int], RepositoryError> = .loading()
 }

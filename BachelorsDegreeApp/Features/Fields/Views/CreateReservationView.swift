@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct CreateReservationView: View {
   @State private var date = Date()
+  @StateObject var viewModel: SportFieldDetailsViewModel
+  @Binding var showState: Bool
+  
   let dateRange: ClosedRange<Date> = {
     let calendar = Calendar.current
     let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date.now)
@@ -38,25 +42,30 @@ struct CreateReservationView: View {
     calendar.date(from:endComponents)!
   }()
   
-  var hours = ["09:00", "18:00", "19:00", "20:00"]
   @State private var selectedFrameworkIndex = 0
   
-  init() {
-    UITableView.appearance().backgroundColor = .clear
-  }
+  @State var hours: [Int] = []
   
   var body: some View {
-    ZStack {
+    UITableView.appearance().backgroundColor = .clear
+    return ZStack {
       Form {
         DatePicker("Ziua rezervarii",
                    selection: $date,
                    in: dateRange,
                    displayedComponents: .date)
+          .onChange(of: date, perform: {value in
+            debugPrint("value \(value)")
+            debugPrint("date \(date)")
+            self.hours = viewModel.getHours(date: date)
+            debugPrint("date \(date)")
+            debugPrint(hours)
+          })
           .datePickerStyle(.compact)
         Section {
           Picker(selection: $selectedFrameworkIndex, label: Text("Hour")) {
-            ForEach(0 ..< hours.count) {
-              Text(self.hours[$0])
+            ForEach(hours, id: \.self) { hour in
+              Text("\(hour):00")
             }
           }
         }
@@ -71,6 +80,10 @@ struct CreateReservationView: View {
   private func floatingButton() -> some View {
     return FloatingButton(text: "Reserve",
                           action: {
+      viewModel.handleCreateReservationButtonPress(date: date,
+                                                   hour: selectedFrameworkIndex)
+      showState = false
+      viewModel.updateReservations()
     },
                           maxHeight: 50.0,
                           foregroundColor: .white,
@@ -84,6 +97,28 @@ struct CreateReservationView: View {
 
 struct CreateReservationView_Previews: PreviewProvider {
   static var previews: some View {
-    CreateReservationView()
+    let repository = MockedSportFieldsRepository(timeInterval: 3.0,
+                                                 failAllOperations: false)
+    let state = SportFieldsState()
+    let service = DefaultSportFieldsService(sportFieldsState: state,
+                                            fieldsRepository: repository)
+    let mapper = DefaultSportFieldsUIMapper()
+    let geocoder = CLGeocoder()
+    
+    let resState = ReservationsState()
+    
+    let resService = DefaultReservationService(reservationState: resState,
+                                               reservationRepository: MockedReservationRepository(timeInterval: 1.0))
+    
+    let viewModel = SportFieldDetailsViewModel(service: service,
+                                               state: state,
+                                               mapper: mapper,
+                                               reservationsState: resState,
+                                               reservationService: resService,
+                                               geocoder: geocoder,
+                                               fieldID: 1,
+                                               loggedUserId: "mail@mail.com")
+    
+    //CreateReservationView(viewModel: viewModel, showState: showState)
   }
 }

@@ -22,21 +22,30 @@ class SportFieldDetailsViewModel: ObservableObject {
   private var service: SportFieldsService
   private var state: SportFieldsState
   private var mapper: SportFieldsUIMapper
+  private var reservationsState: ReservationsState
+  private var reservationService: ReservationService
   private let geocoder: CLGeocoder
   private let fieldID: Int
+  private let loggedUserId: String
   
   // MARK: - Init
   
   init(service: SportFieldsService,
        state: SportFieldsState,
        mapper: SportFieldsUIMapper,
+       reservationsState: ReservationsState,
+       reservationService: ReservationService,
        geocoder: CLGeocoder,
-       fieldID: Int) {
+       fieldID: Int,
+       loggedUserId: String) {
     self.service = service
     self.state = state
     self.mapper = mapper
+    self.reservationsState = reservationsState
+    self.reservationService = reservationService
     self.geocoder = geocoder
     self.fieldID = fieldID
+    self.loggedUserId = loggedUserId
     
     attachToState()
   }
@@ -82,6 +91,13 @@ class SportFieldDetailsViewModel: ObservableObject {
       .assign(to: &$presentationState)
   }
   
+  func getHours(date: Date) -> [Int] {
+    service.getValidHours(fieldID: fieldID,
+                          date: date)
+    debugPrint(state.hours.currentValue)
+    return state.hours.currentValue ?? []
+  }
+  
   func getLocationURL(locationString: String, completionHandler: @escaping (String) -> Void) {
     var locationURL: URL? = nil
     geocoder.geocodeAddressString(locationString) { placemarks, error in
@@ -107,14 +123,23 @@ class SportFieldDetailsViewModel: ObservableObject {
     }
   }
   
-  func handleCreateReservationButtonPress() {
+  func handleCreateReservationButtonPress(date: Date, hour: Int) {
     let currentValues = state.sportsState.currentValue
     if var validCurrentValues = currentValues {
       let index = validCurrentValues.firstIndex(where: { $0.identifier == self.fieldID })
       guard let validIndex = index else {
         return
       }
-      service.updateField(updatedField: validCurrentValues[validIndex])
+      let reservation = Reservation(identifier: -1,
+                                    sportField: validCurrentValues[validIndex],
+                                    day: date,
+                                    hour: hour)
+      reservationService.addReservation(reservation: reservation,
+                                        userId: loggedUserId)
     }
+  }
+  
+  func updateReservations() {
+    reservationService.fetchAllReservations(userId: loggedUserId)
   }
 }
